@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+.window {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background: #f3f4f6;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    background: lightgray;
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    border: 2px solid #dcdcdc;
+    width: 640px;
+    height: 640px;
+    flex-direction: column;
+    background: white;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.col {
+    border: 1px solid #25272b;
+    flex: 1;
+}
+
+.panelBox p {
+    line-height: 0;
+}
+
+.panelBox {
+    /* color: #111827;
+    padding: 12px; */
+    /* background: rgb(133, 128, 128); */
+    /* background: white;
+    border-radius: 9px; */
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+span {
+    margin: 0px 4px;
+}
+
+.panelBox:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+button {
+    background: #3b82f6;
+    color: white;
+    border-radius: 5px;
+    padding: 3px 7px;
+}
+
+input {
+    margin: 2px 3px;
+}
+
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#clear {
+    margin: 0px 4px;
+}
+
+.panelBtn {
+    position: absolute;
+    right: 14px;
+}

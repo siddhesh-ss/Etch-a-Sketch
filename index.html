@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="window">
+        <div class="panel">
+            <div class="btn panelBox">
+                <p>Set no. of boxes on a side</p>
+                <input type="number" id="sizeInput" min="1" max="100">
+                <button class="panelBtn" id="submitBtn">Create Grid</button>
+            </div>
+            <div class="eraser panelBox">
+                <span>Eraser :</span>
+                <button class = "panelBtn" id="eraser">Eraser</button>
+            </div>
+            <div class="colorInput panelBox">
+                <span>Ink : </span>
+                <input type="color" id="colorInput" value="">
+            </div>
+            <button id="clear">CLEAR</button>
+        </div>
+        <div class="container">
+    
+        </div>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
