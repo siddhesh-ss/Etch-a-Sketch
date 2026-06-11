@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+</style>
 </head>
 <body>
     <div class="window">
         <div class="panel">
             <div class="btn panelBox">
-                <p>Set no. of boxes on a side</p>
-                <input type="number" id="sizeInput" min="1" max="100">
-                <button class="panelBtn" id="submitBtn">Create Grid</button>
-            </div>
-            <div class="eraser panelBox">
-                <span>Eraser :</span>
-                <button class = "panelBtn" id="eraser">Eraser</button>
+                <p id="inputText">Grid : 16 x 16</p>
+                <input type="range" id="sizeInput" min="1" max="100" step="1" value="16">
+                <button id="submitBtn">CREATE</button>
             </div>
             <div class="colorInput panelBox">
-                <span>Ink : </span>
-                <input type="color" id="colorInput" value="">
+                <span>INK : </span>
+                <input type="color" id="colorInput">
             </div>
-            <button id="clear">CLEAR</button>
+            <button class = "panelBtn" id="eraser">ERASER</button>
+            <button class="panelBtn" id="rainbow">RAINBOW MODE</button>
+            <button class="panelBtn" id="shadow">SHADOW</button>
+            <button class="panelBtn" id="fill">FILL</button>
+            <button class="panelBtn" id="clear">CLEAR</button>
         </div>
         <div class="container">
     

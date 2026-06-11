@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: "Black Ops One", "Sans-Serif";
 }
 .window {
     display: flex;
@@ -68,7 +69,6 @@ button {
     background: #3b82f6;
     color: white;
     border-radius: 5px;
-    padding: 3px 7px;
 }
 
 input {
@@ -80,11 +80,24 @@ button:hover {
     cursor: pointer;
 }
 
-#clear {
-    margin: 0px 4px;
+.panelBtn {
+    margin: 0px 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 4px 7px;
 }
 
-.panelBtn {
-    position: absolute;
-    right: 14px;
+.panelBtn:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+
+#submitBtn {
+    position: static;
+    margin: 9px 25px 2px 25px;
+    padding: 3px 7px;
 }
