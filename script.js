@@ -36,12 +36,18 @@ function createGrid(n) {
                         let g = Math.ceil(255*Math.random());
                         let b = Math.ceil(255*Math.random());
                         e.target.style.background = `rgb(${r}, ${g}, ${b})`;
+                        e.target.style.opacity = 1;
                     }
                     else if(shadow) {
-                        e.target.style.opacity = "0.5";
+                        let opa = Number(e.target.style.opacity) || 0;
+                        opa = Math.min(1, opa + 0.1);
+                        e.target.style.opacity = opa;
                         e.target.style.background = "black";
                     }
-                    else e.target.style.background = `${colorValue}`;
+                    else {
+                        e.target.style.background = colorValue;
+                        e.target.style.opacity = 1;
+                    }
                     // e.target.style.cursor = "pointer";
                 }
             });
@@ -119,9 +125,10 @@ input.addEventListener("input", () => {
 fillBtn.addEventListener("click", () => {
     let col = document.querySelectorAll(".col");
     col.forEach(box => {
-        box.style.background = `${colorValue}`;
+        box.style.background = colorValue;
+        box.style.opacity = 1;
     });
-})
+});
 
 document.addEventListener("mousedown", () => mousedown = true);
 document.addEventListener("mouseup", () => mousedown = false);
